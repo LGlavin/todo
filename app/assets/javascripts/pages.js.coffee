@@ -4,7 +4,7 @@
 
 $.fn.extend {
   integrateDatepicker: (selector)->
-    selector = selector || 'datepicker'
+    selector = selector || '.datepicker'
     $(@).find(selector).datepicker()
 }
 $(document).ready () ->
