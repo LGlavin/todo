@@ -21,7 +21,7 @@ class TasksController < ApplicationController
   
   def update
     @task = Task.find(params[:id])
-    @task.update_attributes(task_params)
+    @task.assign_attributes(task_params)
     if @task.save
       @tasks = Task.all?
       render :hide_form
