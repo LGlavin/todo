@@ -18,3 +18,5 @@
             %td
               = link_to task_path(task), remote: true, method: :delete, data: {confirm: "Do you really want to delete #{task.title}?"} do
                 %i.icon-remove
+              = link_to edit_task_path(task), remote: true do 
+                %i.icon-edit 
