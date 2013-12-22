@@ -1,6 +1,9 @@
 class Task < ActiveRecord::Base
   validates_presence_of :title
   validate :future_completed_date
+  validates_presence_of :user
+  
+  belongs_to :user
 
   private
 
